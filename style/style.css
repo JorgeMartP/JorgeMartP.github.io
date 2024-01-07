@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #ffff;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    padding: 5px 10%;
+}
+.header .imagen {
+    display: flex;
+    align-items: center;
+}
+.header .imagen .logo-imagen img{
+    height: 55px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: black 2px solid;
+    font-size: 600;
+}
+.header .nav-links{
+    list-style: none;
+}
+.header .nav-links a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+.header .nav-links a:hover{
+    color: #333;
+}
+.header .nav-links li{
+    display: inline-block;
+    padding: 20px;
+}
+.download-button {
+    position: relative;
+    border-width: 0;
+    color: rgb(19, 19, 19);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 1;
+}
+.download-button .css-i6dzq12{
+    color: #fff;
+}
+.download-button .docs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    z-index: 1;
+    background-color: #ffffff;
+    border: solid 1px #e8e8e82d;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  
+  .download-button:hover {
+    box-shadow: rgba(233, 233, 233, 0.555) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  .download {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: -1;
+    border-radius: 0px 0px 4px 4px;
+    transform: translateY(0%);
+    background-color: #000;
+    border: solid 1px #fff;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    cursor: pointer;
+  }
+  
+  .download-button:hover .download {
+    transform: translateY(100%);
+  }
+  
+  .download svg polyline,
+  .download svg line {
+    animation: docs 1s infinite;
+  }
+  
+  @keyframes docs {
+    0% {
+      transform: translateY(0%);
+    }
+  
+    50% {
+      transform: translateY(-15%);
+    }
+  
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+.container-home{
+    display: flex;
+    width: 100%;
+    padding-top: 80px;
+    height: auto;
+}
+.container-home .text-home{
+    width: 50%;
+    flex-wrap: wrap;
+    padding: 30px 80px 30px 80px;
+    text-align: left;
+}
+.container-home .text-home h1:first-of-type{
+    font-weight: 400;
+    padding-top: 5rem;
+}
+.container-home .text-home h1{
+    font-weight: 400;
+    margin: 10px;
+}
+.container-home .text-home span{
+    font-weight: 900;
+}
+.container-home .text-home p{
+    font-weight: 100;
+    padding-top: 2rem;
+}
+.container-home .img-home{
+    width: 50%;
+    
+}
+
+.redes-home{
+    display: flex;
+    padding-top: 60px;
+}
+.redes-card {
+    flex-wrap: wrap;
+}
+
+.redes-card a{
+    height: 3rem;
+    width: 3rem;
+    padding: 10px 8px 5px 8px;
+    border-radius: .2rem;
+    margin-right: 1rem;
+    border: #000 1px solid;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit
+}
+.redes-card .github:hover{
+    color: #fff;
+    border-color: #1E2228;
+    background-color: #1E2228;
+    transition: .3s all;
+}
+.redes-card .linkedin:hover{
+    background-color: #0A67C3;
+    border-color: #0A67C3;
+    color: #fff;
+    transition: .3s all;
+}
+.redes-card .whatsapp:hover{
+    background-color: #2BB640;
+    border-color: #2BB640;
+    color: #fff;
+    transition: .3s all;
+}
+.redes-card i{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.container-skill{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 60px 60px 80px;
+    
+}
+h1{
+    padding-top: 70px;
+    text-align: center;
+}
+.skill-card{
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 10px 10px 20px rgb(25, 25, 25, .5),
+                -10px -10px 10px rgb(60, 60, 60, .6);
+    margin: 20px;
+    padding-top: 50px;
+    color: #fff;
+    font-weight: 700;
+}
+.skill-card i{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.html:hover{
+    background-color: #E54C26;
+    color: #fff;
+    border-color: #E54C26;
+    transition: .3s all;
+}
+
+.css:hover{
+    background-color: #244ADD;
+    color: #fff;
+    border-color: #244ADD;
+    transition: .3s all;
+}
+
+.javascript:hover{
+    background-color: #EFD81D;
+    color: #fff;
+    border-color: #EFD81D;
+    transition: .3s all;
+}
+
+.php:hover{
+    background-color: #868DB6;
+    color: #fff;
+    border-color: #868DB6;
+    transition: .3s all;
+}
+.python:hover{
+    background-color: #3471A1;
+    color: #fff;
+    border-color: #3471A1;
+    transition: .3s all;
+}
+.postgresql:hover{
+    background-color: #30648D;
+    color: #fff;
+    border-color: #30648D;
+    transition: .3s all;
+}
+.mongo:hover{
+    background-color: #006449;
+    color: #fff;
+    border-color: #006449;
+    transition: .3s all;
+}
+.node:hover{
+    background-color: #7EC729;
+    color: #fff;
+    border-color: #7EC729;
+    transition: .3s all;
+}
+.git:hover{
+    background-color: #E84C30;
+    color: #fff;
+    border-color: #E84C30;
+    transition: .3s all;
+}
