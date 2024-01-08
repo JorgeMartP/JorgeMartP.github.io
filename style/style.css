@@ -196,24 +196,24 @@ body{
 .container-skill{
     display: flex;
     flex-wrap: wrap;
-    padding: 15px 60px 60px 80px;
-    
+    justify-content: center;
+    align-items: center;
+    padding: 15px 60px 60px 60px;
 }
-h1{
+.text-skills{
     padding-top: 70px;
+    padding-bottom: 20px;
     text-align: center;
 }
 .skill-card{
     text-align: center;
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-radius: 30px;
-    background: #212121;
-    box-shadow: 10px 10px 20px rgb(25, 25, 25, .5),
-                -10px -10px 10px rgb(60, 60, 60, .6);
-    margin: 20px;
+    background: #fff;
+    margin: 15px;
     padding-top: 50px;
-    color: #fff;
+    color: #000;
     font-weight: 700;
 }
 .skill-card i{
@@ -276,4 +276,10 @@ h1{
     color: #fff;
     border-color: #E84C30;
     transition: .3s all;
+}
+
+@media screen and (max-width: 768px){
+    .container-skill{
+        padding: 0px;
+    }
 }
