@@ -7,14 +7,14 @@
 }
 
 body{
-    background: #ffff;
+    background: #000019;
 }
 .header{
     position: fixed;
     width: 100%;
     display: flex;
-    background-color: #fff;
-    color: black;
+    background-color: #000019;
+    color: #ffff;
     justify-content: space-between;
     align-items: center;
     height: 75px;
@@ -29,7 +29,7 @@ body{
     width: auto;
     border-radius: 50%;
     margin-right: 1rem;
-    border: black 2px solid;
+    border: #ffff 2px solid;
     font-size: 600;
 }
 .header .nav-links{
@@ -38,10 +38,10 @@ body{
 .header .nav-links a{
     text-decoration: none;
     font-weight: 600;
-    color: black;
+    color: #ffff;
 }
 .header .nav-links a:hover{
-    color: #333;
+    color: #f2f2f2;
 }
 .header .nav-links li{
     display: inline-block;
@@ -50,14 +50,14 @@ body{
 .download-button {
     position: relative;
     border-width: 0;
-    color: rgb(19, 19, 19);
+    color: #ffff;
     font-size: 15px;
     font-weight: 600;
     border-radius: 4px;
     z-index: 1;
 }
 .download-button .css-i6dzq12{
-    color: #fff;
+    color: #000019;
 }
 .download-button .docs {
     display: flex;
@@ -68,18 +68,17 @@ body{
     padding: 0 10px;
     border-radius: 4px;
     z-index: 1;
-    background-color: #ffffff;
-    border: solid 1px #e8e8e82d;
+    background-color: #000019;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  }
-  
-  .download-button:hover {
-    box-shadow: rgba(233, 233, 233, 0.555) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
-  
-  .download {
+}
+
+.download-button:hover {
+    box-shadow: rgba(255, 255, 255, 0.555) 0px 54px 55px,
+                rgba(209, 209, 209, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px,
+                rgba(255, 255, 255, 0.17) 0px 12px rgba(255, 254, 254, 0.09) 0.09 0px -3px 5px;
+}
+
+.download {
     position: absolute;
     inset: 0;
     display: flex;
@@ -90,40 +89,41 @@ body{
     z-index: -1;
     border-radius: 0px 0px 4px 4px;
     transform: translateY(0%);
-    background-color: #000;
+    background-color: #fff;
     border: solid 1px #fff;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
     cursor: pointer;
-  }
-  
-  .download-button:hover .download {
+}
+
+.download-button:hover .download {
     transform: translateY(100%);
-  }
-  
-  .download svg polyline,
-  .download svg line {
+}
+
+.download svg polyline,
+.download svg line {
     animation: docs 1s infinite;
-  }
-  
-  @keyframes docs {
+}
+
+@keyframes docs {
     0% {
-      transform: translateY(0%);
+    transform: translateY(0%);
     }
-  
+
     50% {
-      transform: translateY(-15%);
+    transform: translateY(-15%);
     }
-  
+
     100% {
-      transform: translateY(0%);
+    transform: translateY(0%);
     }
-  }
-  
+}
+
 .container-home{
     display: flex;
     width: 100%;
     padding-top: 80px;
     height: auto;
+    color: #ffff;
 }
 .container-home .text-home{
     width: 50%;
@@ -148,7 +148,6 @@ body{
 }
 .container-home .img-home{
     width: 50%;
-    
 }
 
 .redes-home{
@@ -165,10 +164,10 @@ body{
     padding: 10px 8px 5px 8px;
     border-radius: .2rem;
     margin-right: 1rem;
-    border: #000 1px solid;
+    border: #fff 1px solid;
     cursor: pointer;
     text-decoration: none;
-    color: inherit
+    color: #ffff;
 }
 .redes-card .github:hover{
     color: #fff;
@@ -210,72 +209,18 @@ body{
     width: 150px;
     height: 150px;
     border-radius: 30px;
-    background: #fff;
+    background: #000019;
     margin: 15px;
     padding-top: 50px;
-    color: #000;
+    color: #ffff;
     font-weight: 700;
 }
 .skill-card i{
     font-size: 40px;
     margin-bottom: 15px;
 }
-.html:hover{
-    background-color: #E54C26;
+h1{
     color: #fff;
-    border-color: #E54C26;
-    transition: .3s all;
-}
-
-.css:hover{
-    background-color: #244ADD;
-    color: #fff;
-    border-color: #244ADD;
-    transition: .3s all;
-}
-
-.javascript:hover{
-    background-color: #EFD81D;
-    color: #fff;
-    border-color: #EFD81D;
-    transition: .3s all;
-}
-
-.php:hover{
-    background-color: #868DB6;
-    color: #fff;
-    border-color: #868DB6;
-    transition: .3s all;
-}
-.python:hover{
-    background-color: #3471A1;
-    color: #fff;
-    border-color: #3471A1;
-    transition: .3s all;
-}
-.postgresql:hover{
-    background-color: #30648D;
-    color: #fff;
-    border-color: #30648D;
-    transition: .3s all;
-}
-.mongo:hover{
-    background-color: #006449;
-    color: #fff;
-    border-color: #006449;
-    transition: .3s all;
-}
-.node:hover{
-    background-color: #7EC729;
-    color: #fff;
-    border-color: #7EC729;
-    transition: .3s all;
-}
-.git:hover{
-    background-color: #E84C30;
-    color: #fff;
-    border-color: #E84C30;
-    transition: .3s all;
 }
 
 @media screen and (max-width: 768px){
