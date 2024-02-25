@@ -7,14 +7,14 @@
 }
 
 body{
-    background: #000019;
+    background: #ffff;
 }
 .header{
     position: fixed;
     width: 100%;
     display: flex;
-    background-color: #000019;
-    color: #ffff;
+    background-color: #ffff;
+    color: #000;
     justify-content: space-between;
     align-items: center;
     height: 75px;
@@ -38,10 +38,22 @@ body{
 .header .nav-links a{
     text-decoration: none;
     font-weight: 600;
-    color: #ffff;
+    color: #333;
+    position: relative;
 }
-.header .nav-links a:hover{
-    color: #f2f2f2;
+.header .nav-links a::after{
+    content: '';
+    position: absolute;
+    background-color: #000;
+    height: 3px;
+    bottom: -5px;
+    width: 0%;
+    left: 0;
+    transition: all .5s;
+}
+.header .nav-links a:hover::after{
+    width: 100%;
+    color: #000;
 }
 .header .nav-links li{
     display: inline-block;
@@ -50,14 +62,14 @@ body{
 .download-button {
     position: relative;
     border-width: 0;
-    color: #ffff;
+    color: #000;
     font-size: 15px;
     font-weight: 600;
     border-radius: 4px;
     z-index: 1;
 }
 .download-button .css-i6dzq12{
-    color: #000019;
+    color: #000;
 }
 .download-button .docs {
     display: flex;
@@ -68,7 +80,7 @@ body{
     padding: 0 10px;
     border-radius: 4px;
     z-index: 1;
-    background-color: #000019;
+    background-color: #ffff;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
@@ -90,7 +102,8 @@ body{
     border-radius: 0px 0px 4px 4px;
     transform: translateY(0%);
     background-color: #fff;
-    border: solid 1px #fff;
+    border: solid 3px #000;
+    color: #fff;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
     cursor: pointer;
 }
@@ -123,7 +136,7 @@ body{
     width: 100%;
     padding-top: 80px;
     height: auto;
-    color: #ffff;
+    color: #000;
 }
 .container-home .text-home{
     width: 50%;
@@ -164,10 +177,10 @@ body{
     padding: 10px 8px 5px 8px;
     border-radius: .2rem;
     margin-right: 1rem;
-    border: #fff 1px solid;
+    border: #000 1px solid;
     cursor: pointer;
     text-decoration: none;
-    color: #ffff;
+    color: #000;
 }
 .redes-card .github:hover{
     color: #fff;
@@ -192,7 +205,47 @@ body{
     font-size: 1.5rem;
 }
 
+.container-exp{
+    padding-top: 3rem;
+}
+
+.container-exp h1{
+    text-align: center;
+}
+
+
+.container-flex{
+    display: flex;
+    padding: 0 80px 0 40px;
+    margin: 50px;
+}
+.container-flex .img-exp{
+    padding-right: 5rem;
+}
+
+.container-flex .img-exp img{
+    width: 30rem;
+    height: 30rem;
+}
+
+.container-flex .text-exp{
+    font-size: 1rem;
+    font-weight: 300;
+    padding-top: 1rem;
+}
+.container-flex .text-exp p{
+    margin-top: 2rem;
+}
+
 .container-skill{
+    background: #000;
+}
+.container-skill h1{
+    text-align: center;
+    color: #fff;
+}
+
+.container-skill-flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -206,23 +259,59 @@ body{
 }
 .skill-card{
     text-align: center;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 30px;
-    background: #000019;
+    background: #000;
     margin: 15px;
     padding-top: 50px;
-    color: #ffff;
+    color: #fff;
     font-weight: 700;
 }
 .skill-card i{
     font-size: 40px;
     margin-bottom: 15px;
 }
-h1{
-    color: #fff;
+
+.container-proyects{
+    width: 100%;
+    height: 40rem;
+    background: #000;
 }
 
+.container-contact{
+    width: 100%;
+    height: 40rem;
+    background: #ffff;
+}
+.container-contact-flex{
+    display: flex;
+    padding: 0 80px 0 40px;
+    margin: 80px;
+}
+.form-contact{
+    width: 50%;
+    padding-right: 6rem;
+}
+.contact-info{
+    width: 50%;
+}
+.input-t textarea{
+    margin: 15px;
+    width: 100%;
+    border: #000 1px solid;
+    border-radius: 3px;
+    padding-left:15px ;
+    padding-top: 15px;
+}
+.input-t input{
+    height: 45px;
+    width: 100%;
+    margin: 15px;
+    border: #000 1px solid;
+    border-radius: 3px;
+    padding-left:15px ;
+}
 @media screen and (max-width: 768px){
     .container-skill{
         padding: 0px;
