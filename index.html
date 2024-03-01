@@ -19,10 +19,11 @@
         href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
         rel="stylesheet"
     ></link>
+    
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="responsive">
         <div class="imagen">
             <div class="logo-imagen">
                 <a href="#">
@@ -35,28 +36,29 @@
 
             <label>JORGE MARTINEZ</label>
         </div>
-
         <nav>
             <ul class="nav-links">
                 <li>
-                    <a href="#">INICIO</a>
+                    <a href="#sobreMi" id="responsive">SOBRE MÍ</a>
                 </li>
 
                 <li>
-                    <a href="#">SOBRE MÍ</a>
+                    <a href="#experiencia" id="responsive">EXPERIENCIA</a>
+                </li>
+                <li>
+                    <a href="#habilidades" id="responsive">HABILIDADES</a>
+                </li>
+                <li>
+                    <a href="#proyetos" id="responsive">PROYECTOS</a>
                 </li>
 
                 <li>
-                    <a href="#">PROYECTOS</a>
-                </li>
-
-                <li>
-                    <a href="#">CONTACTO</a>
+                    <a href="#contacto" id="responsive">CONTACTO</a>
                 </li>
             </ul>
         </nav>
 
-        <button class="download-button">
+        <button class="download-button" id="responsive">
             <div class="docs">
                 <svg
                     viewBox="0 0 24 24"
@@ -116,9 +118,13 @@
                 </svg>
             </div>
         </button>
+
+        <label id="icon">
+            <i class='bx bx-menu'></i>
+        </label>
     </header>
 
-    <div class="container-home">
+    <section class="container-home" id="sobreMi">
         <div class="text-home">
             <h1>
                 ¡Hola! Soy
@@ -168,25 +174,23 @@
                 class="svg"
             >
         </div>
-    </div>
+    </section>
     
-    <div class="container-exp">
+    <section class="container-exp" id="experiencia">
         <h1>Experiencia</h1>
         <div class="container-flex">
             <div class="img-exp">
-                <img src="img/iconoSobreme.png" alt="img-experiencia">
+                <img src="img/iconoSobreme.png" alt="img-experiencia" id="imgExp" width="400px"
+                height="400px">
             </div>
             <div class="text-exp">
                 <h2>Fortaleza Profesional</h2><br>
                 <p>A pesar de carecer de experiencia laboral formal, he canalizado mi energía y habilidades durante el último año en la ejecución de diversos proyectos personales, los cuales están detalladamente descritos en la sección correspondiente. Estas experiencias han sido esenciales para mi desarrollo profesional, brindándome la oportunidad de aplicar de manera práctica mis habilidades y demostrar mi capacidad de autogestión. A través de estos proyectos, he cultivado no solo competencias técnicas, sino también habilidades de resolución de problemas y creatividad. Estoy convencido de que esta trayectoria única aportará valor a cualquier entorno laboral, y estoy ansioso por aplicar estas habilidades en nuevos desafíos profesionales.</p>
             </div>
         </div>
-        
-        
-        
-    </div>
+    </section>
     
-    <div class="container-skill">
+    <section class="container-skill" id="habilidades">
         <h1 class="text-skills">Habilidades</h1>
         <div class="container-skill-flex">
             <div class="skill-card html">
@@ -196,12 +200,12 @@
     
             <div class="skill-card css">
                 <i class="bx bxl-css3"></i>
-                <P>CSS3</P>
+                <p>CSS3</p>
             </div>
     
             <div class="skill-card javascript">
                 <i class="bx bxl-javascript"></i>
-                <P>Javascript</P>
+                <p>Javascript</p>
             </div>
     
             <div class="skill-card php">
@@ -228,36 +232,46 @@
                 <p>GIT</p>
             </div>
         </div>
-    </div>
-    <div class="container-proyects">
+    </section>
+    <section class="container-proyects" id="proyetos">
+        <h1>Proyectos</h1>
         <div class="card-proyects-flex">
-            <div class="card-proyect">
+            <div class="card-proyect-text">
+                <h1>01</h1>
+                <h2>Nombre Proyecto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam hic illo accusamus repudiandae quo vitae ratione praesentium? Fuga, sapiente maiores est dignissimos officiis distinctio dicta non accusamus itaque voluptates dolor.</p>
             </div>
             <div class="card-proyect">
-                
+                <img src="img/image 770 (1).png" alt="" class="proyect-img1">
             </div>
         </div>
         <div class="card-proyects-flex">
             <div class="card-proyect">
-
+                <img src="img/image 770.png" alt="" class="proyect-img2">
             </div>
-            <div class="card-proyect">
-                
+            <div class="card-proyect-text">
+                <h1>02</h1>
+                <h2>Nombre Proyecto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam hic illo accusamus repudiandae quo vitae ratione praesentium? Fuga, sapiente maiores est dignissimos officiis distinctio dicta non accusamus itaque voluptates dolor.</p>
             </div>
         </div>
         <div class="card-proyects-flex">
-            <div class="card-proyect">
-
+            <div class="card-proyect-text">
+                <h1>03</h1>
+                <h2>Nombre Proyecto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam hic illo accusamus repudiandae quo vitae ratione praesentium? Fuga, sapiente maiores est dignissimos officiis distinctio dicta non accusamus itaque voluptates dolor.</p>
             </div>
             <div class="card-proyect">
-                
+                <img src="img/image 771.png" alt="" class="proyect-img3">
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container-contact">
+    <section class="container-contact" id="contacto">
+        <h1>CONTACTO</h1>
         <div class="container-contact-flex">
             <div class="form-contact">
+                <form action="">
                 <div class="input-t">
                     <input type="text" class="input-text" placeholder="Escribe tu Nombre">
                 </div>
@@ -267,11 +281,47 @@
                 <div class="input-t">
                     <textarea name="" id="" cols="30" rows="10" placeholder="Deja tu comentario..."></textarea>
                 </div>
+                <div class="button-c">
+                    <input type="submit" value="Enviar" name="enviar">
+                    <a href="" class="github">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="" class="linkedin">
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="" class="whatsapp">
+                        <i class="bx bxl-whatsapp"></i>
+                    </a>
+                    <a href="" class="email">
+                        <i class='bx bx-envelope'></i>
+                    </a>
+                </div>
+                </form>
             </div>
             <div class="contact-info">
-
+                <div class="contact-t">
+                    <h2>Conéctate Conmigo</h2>
+                </div>
+                <div class="contact-p">
+                    <p>Estoy emocionado por la oportunidad de conectarme contigo y compartir más sobre mi experiencia y habilidades. Si tienes alguna pregunta o estás interesado/a en colaborar, no dudes en ponerte en contacto conmigo. Estaré encantado de hablar contigo y explorar posibles oportunidades juntos</p>
+                </div>
+                <div class="contact-i">
+                    <img src="img/correo.png" alt="correo">
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jorge Martinez | </p>
+        <a href="#">
+            <img
+                src="img/deku.jpg"
+                alt="perfil"
+            >
+        </a>
+    </footer>
+
+<script src="Js/script.js"></script>
 </body>
 </html>
