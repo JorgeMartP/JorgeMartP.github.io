@@ -212,26 +212,18 @@ body{
 
 
 
-@media screen and (max-width: 1920px){
+@media screen and (min-width: 1920px){
     .container-home{
-        padding: 15rem;
-    }
-    .text-home{
-        padding-top: 20rem;
-        padding-bottom: 0;
-    }
-    .img-home{
-        padding-top: 5rem;
-        padding-bottom: 0;
+        padding: 10rem;
     }
     .container-exp{
-        padding: 15rem;
+        padding: 10rem;
     }
     .container-skill{
-        padding: 15rem;
+        padding: 10rem;
     }
     .container-proyects{
-        padding: 15rem;
+        padding: 10rem;
     }
     
 }
